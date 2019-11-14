@@ -1,0 +1,26 @@
+import random as r
+
+rastgelesayi = r.randint(1,100)
+
+print("======================Tahmin Oyunu======================")
+
+print("Sayıyı 100 ile 0 arasından Seçin")
+
+while True:
+    print("======================")
+    tahmin = int(input("Sayıyı Tahin Edin:"))
+
+    if tahmin == rastgelesayi:
+        print("*****************")
+        for i in range(10):
+            print("!!Doğru Tahmin!!")
+        print("*****************")
+        break
+
+    elif tahmin < rastgelesayi:
+        print("======================")
+        print("Daha Büyük")
+
+    elif tahmin > rastgelesayi:
+        print("======================")
+        print("Daha Küçük")
